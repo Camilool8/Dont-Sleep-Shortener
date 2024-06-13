@@ -130,7 +130,6 @@ CREATE TABLE clicks (
     clicked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     ip_address VARCHAR(45) NOT NULL,
     user_agent TEXT NOT NULL,
-    referrer TEXT,
     FOREIGN KEY (url_id) REFERENCES urls(id)
 );
 ```
